@@ -1,11 +1,12 @@
 # sfb
 
-This is kind of an expiramental project and possibly a bad idea. So, I wouldn't
+This is kind of an expiremental project and possibly a bad idea. So, I wouldn't
 necessarily recommend using it.
 
 ## high level goal
-build a software renderer that can be used reasonably easily on machines with low or no gpu
 
+build a software renderer that can be used reasonably easily on machines with
+low or no gpu
 
 ### justifications
 
@@ -20,8 +21,8 @@ build a software renderer that can be used reasonably easily on machines with lo
 1. We create a texture.
 1. we fill a buffer with pixels and then load it to that texture
 1. a small api is exposed through a shared object file
-1. there's a go wrapper library that hooks into that .so file and allows us to set
-   individual pixels in the buffer
+1. there's a go wrapper library that hooks into that .so file and allows us to
+   set individual pixels in the buffer
 1. to draw shapes, we use some well known drawing algorithms that I tried to
    concurrency-ify
 
@@ -32,9 +33,9 @@ shape. However, I was able to get these circles moving around at over 100fps
 
 <img src="./assets/circles.png" width="400"></img>
 
-I'd like to play around with rewriting the drawing functions in C to
-explore simd operations. That's unexplored terrority for me, but maybe I'll jump
-down that rabbit hole someday.
+I'd like to play around with rewriting the drawing functions in C to explore
+simd operations. That's unexplored terrority for me, but maybe I'll jump down
+that rabbit hole someday.
 
 ### how to run
 
