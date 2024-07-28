@@ -3,9 +3,9 @@ CFLAGS = -Wall -Wextra -O2
 LDFLAGS = -lSDL2 -mavx
 
 TARGET_LIB = libsfb.so
-TARGET_TEST = simd_fb_test
+TARGET_TEST = sfb_test
 
-SRC = sfb.c simd_draw.c
+SRC = sfb.c 
 TEST_SRC = main.c
 
 all: $(TARGET_LIB)
